@@ -2,6 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: hotstar-deployment
+  labels:
+    app: hotstar
 spec:
   replicas: 2  # Number of desired replicas
   selector:
